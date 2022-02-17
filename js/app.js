@@ -55,6 +55,7 @@ document.getElementById("saving-button").addEventListener("click", function () {
     document.getElementById("saving-text-error").style.display = "block";
     document.getElementById("saving-update").style.display = "none";
     document.getElementById("zero-error").style.display = "none";
+    document.getElementById("saving-error").style.display = "none";
   }
   // saving error
   else if (savingAmount >= balance) {

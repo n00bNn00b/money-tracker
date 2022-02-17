@@ -1,16 +1,9 @@
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: 70px;
-  margin-right: 70px;
-}
-.artwork {
-  width: 50%;
+#header-color {
+  color: #31a5ac;
 }
 .artwork img {
-  width: 705px;
-  height: 700px;
+  width: 600px;
+  height: 600px;
 }
 .form {
   background-color: bisque;
@@ -20,18 +13,23 @@
 
 #empty-error {
   display: none;
+  color: red;
 }
 
 #income-error {
   display: none;
+  color: red;
 }
 #saving-error {
   display: none;
+  color: red;
 }
 
 #saving-text-error {
   display: none;
+  color: red;
 }
 #zero-error {
   display: none;
+  color: red;
 }
