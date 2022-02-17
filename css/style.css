@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.artwork {
+  width: 50%;
+}
+.artwork img {
+  width: 705px;
+  height: 700px;
+}
+.form {
+  background-color: bisque;
+  width: 705px;
+  height: 700px;
+}
+
+#empty-error {
+  display: none;
+}
+
+#income-error {
+  display: none;
+}

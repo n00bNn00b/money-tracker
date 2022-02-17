@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money Tracker</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Money Tracker</h1>
+    </header>
+    <main>
+      <section class="container">
+        <div class="artwork">
+          <img src="images/7428.jpg" alt="" srcset="" />
+        </div>
+        <div class="form">
+          <h3>Income</h3>
+          <p>
+            Income: <input id="income" type="text" />
+            <br />
+            Food: <input id="food" type="text" />
+            <br />
+            Rent:
+            <input id="rent" type="text" />
+            <br />
+            Cloth: <input id="cloth" type="text" />
+            <br />
+            <button id="calculate-btn">Calculate</button>
+            <h5 id="empty-error">
+              Sorry! input can not be empty field, character, negative value or 0.
+            </h5>
+            <!-- <h5 id="character-error">
+              Sorry! You can not input characters instead of numbers.
+            </h5> -->
+          </p>
+          <h3 id="balance-display">
+            Total Expenses: <span id="total-expense">00.00</span> USD
+            <br />
+            Balance: <span id="balance">00.00</span> USD
+          </h3>
+         
+          <h5 id="income-error">
+            You can not spend more than your income.
+          </h5>
+          <p>
+              <h3>
+                  Save: <input id="saving-percentage" type="text"> % <button id="saving-button">Save</button>
+                  <br>
+                  Saving Amount: <span id="savings">00.00</span> USD
+                  <br>
+                  Remaining Balance: <span id="rest-balance">00.00</span> USD
+              </h3>
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>
