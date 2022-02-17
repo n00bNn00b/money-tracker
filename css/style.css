@@ -14,6 +14,7 @@
 #empty-error {
   display: none;
   color: red;
+  padding: 5px;
 }
 
 #income-error {
@@ -23,13 +24,16 @@
 #saving-error {
   display: none;
   color: red;
+  padding: 5px;
 }
 
 #saving-text-error {
   display: none;
   color: red;
+  padding: 5px;
 }
 #zero-error {
   display: none;
   color: red;
+  padding: 5px;
 }
