@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Money Tracker</title>
+    <!-- bootstrap5 css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- custom css -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -45,17 +48,32 @@
           </h5>
           <p>
               <h3>
-                  Save: <input id="saving-percentage" type="text"> % <button id="saving-button">Save</button>
+                  Save: <input id="saving-percentage" type="text" required> % <button id="saving-button">Save</button>
+                </h3>
                   <br>
+                  <h3 id="saving-update">
                   Saving Amount: <span id="savings">00.00</span> USD
                   <br>
                   Remaining Balance: <span id="rest-balance">00.00</span> USD
               </h3>
+              <h3 id="saving-error">
+                Your can  not save more than your balance
+              </h3>
+              <h3 id="saving-text-error">
+                You can not input any text or empty field instead of number.
+              </h3>
+              <h3 id="zero-error">
+                you can not input less than or equal to zero.
+              </h3>
+
           </p>
         </div>
       </section>
     </main>
     <footer></footer>
+    <!-- bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- functional JS -->
     <script src="js/app.js"></script>
   </body>
 </html>

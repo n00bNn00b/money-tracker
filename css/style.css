@@ -25,3 +25,13 @@
 #income-error {
   display: none;
 }
+#saving-error {
+  display: none;
+}
+
+#saving-text-error {
+  display: none;
+}
+#zero-error {
+  display: none;
+}
