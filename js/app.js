@@ -18,10 +18,12 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
   const cloth = getUserInput("cloth");
   // is isNan error handling
   if (isNaN(income, food, rent, cloth)) {
-    console.log("can't be text or negative or 0");
+    document.getElementById("empty-error").style.display = "block";
+    document.getElementById("balance-display").style.display = "none";
   }
   if (income <= 0 || food <= 0 || rent <= 0 || cloth <= 0) {
-    console.log("can't be text or negative or 0");
+    document.getElementById("empty-error").style.display = "block";
+    document.getElementById("balance-display").style.display = "none";
   }
   const expenses = food + rent + cloth;
   document.getElementById("total-expense").innerText = expenses;
