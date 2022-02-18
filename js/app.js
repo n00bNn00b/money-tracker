@@ -2,7 +2,7 @@ function getUserInput(input) {
   const userInputPrimary = document.getElementById(input);
   const userInputText = userInputPrimary.value;
   const userInputAmount = parseFloat(userInputText);
-  userInputPrimary.value = "";
+  // userInputPrimary.value = ""; //for user experience value not cleared
 
   return userInputAmount;
 }
