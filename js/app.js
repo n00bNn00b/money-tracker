@@ -26,7 +26,7 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
   } else if (expenses > income) {
     document.getElementById("income-error").style.display = "block";
     document.getElementById("balance-display").style.display = "none";
-  } else if (income <= 0 || food <= 0 || rent <= 0 || cloth <= 0) {
+  } else if (income < 0 || food < 0 || rent < 0 || cloth < 0) {
     document.getElementById("empty-error").style.display = "block";
     document.getElementById("balance-display").style.display = "none";
     document.getElementById("income-error").style.display = "none";
@@ -65,7 +65,7 @@ document.getElementById("saving-button").addEventListener("click", function () {
     document.getElementById("saving-error").style.display = "block";
   }
   // zero or negative error
-  else if (savingInput <= 0) {
+  else if (savingInput < 0) {
     document.getElementById("saving-text-error").style.display = "none";
     document.getElementById("saving-update").style.display = "none";
     document.getElementById("zero-error").style.display = "block";
